@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git://github.com/addhome2001/nextable.git"
   },
-  "main": "index.js",
+  "main": "libs/index.js",
   "engines": {
     "node": ">=4.2.2"
   },
@@ -21,7 +21,6 @@
     "next"
   ],
   "scripts": {
-    "start": "node index.js",
     "lint": "./node_modules/.bin/eslint . --ignore-path .gitignore",
     "test:watch": "./node_modules/.bin/ava -w --verbose",
     "test": "nyc ./node_modules/.bin/ava"
