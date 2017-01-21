@@ -22,8 +22,8 @@
   ],
   "scripts": {
     "lint": "./node_modules/.bin/eslint . --ignore-path .gitignore",
-    "test:watch": "./node_modules/.bin/ava -T 2s -w --verbose",
-    "test": "nyc ./node_modules/.bin/ava -T 2s"
+    "test:watch": "./node_modules/.bin/ava -w --verbose",
+    "test": "nyc ./node_modules/.bin/ava"
   },
   "devDependencies": {
     "eslint": "3.12.0",
