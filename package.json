@@ -1,6 +1,6 @@
 {
   "name": "nextable",
-  "description": "A serial computing library.",
+  "description": "A library of serial computing.",
   "version": "0.0.1",
   "author": {
     "name": "addhome2001",
@@ -16,9 +16,10 @@
     "node": ">=4.2.2"
   },
   "keywords": [
-    "parallel",
+    "serial",
     "sync",
-    "next"
+    "next",
+    "nextable"
   ],
   "scripts": {
     "lint": "./node_modules/.bin/eslint . --ignore-path .gitignore",
