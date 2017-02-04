@@ -1,6 +1,6 @@
 import ava from 'ava';
 import { spy } from 'sinon';
-import nextable from '../lib/factory';
+import nextable from '../';
 
 const trigger = spy();
 
