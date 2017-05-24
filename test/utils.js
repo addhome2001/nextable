@@ -5,10 +5,10 @@ const getArgs = function () {
   return toArray(arguments);
 };
 
-ava('should return arguments to an array', (t) => {
+ava('toArray', (t) => {
   t.deepEqual(getArgs(1, 2, 3), [1, 2, 3]);
 });
 
-ava('should return empty array if arguments is not exist', (t) => {
+ava('empty array', (t) => {
   t.deepEqual(getArgs(), []);
 });
