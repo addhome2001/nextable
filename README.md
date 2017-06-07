@@ -4,7 +4,7 @@
 
 [![Known Vulnerabilities](https://snyk.io/test/github/addhome2001/nextable/badge.svg)](https://snyk.io/test/github/addhome2001/nextable)
 
-A library that can let you compute any kind of functions in serial order.
+Computing any kinds of functions in serial order.
 
 ## Install
 ```
@@ -21,14 +21,14 @@ const nextable = require('nextable');
 ___Functions of async and sync___
 ```js
 
-// if not passing "next" to parameter,
-// will treat like normal function
+// if not passing "next" to the arguments,
+// will be treated like a normal function.
 const normalTask = () => {
   console.log('normal task');
 };
 
-// if passing "next" to parameter,
-// will be waiting for "next" to be called
+// if passing "next" to the arguments,
+// will wait for "next" to be called
 const setTimeoutTask = next => {
   setTimeout(() => {
     console.log('setTimeout Task');
