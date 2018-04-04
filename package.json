@@ -26,12 +26,14 @@
     "test:watch": "./node_modules/.bin/ava -w --verbose",
     "test": "nyc ./node_modules/.bin/ava",
     "snyk-protect": "snyk protect",
+    "precommit": "npm run lint && npm test",
     "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "eslint": "3.12.0",
     "eslint-config-airbnb-base": "10.0.1",
     "eslint-plugin-import": "2.2.0",
+    "husky": "^0.14.3",
     "nyc": "10.0.0"
   },
   "dependencies": {
