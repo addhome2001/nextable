@@ -37,7 +37,7 @@
   "dependencies": {
     "ava": "0.21.0",
     "sinon": "1.17.7",
-    "snyk": "^1.31
+    "snyk": "^1.31"
   },
   "ava": {
     "files": [
