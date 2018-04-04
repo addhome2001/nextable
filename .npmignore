@@ -1,0 +1,14 @@
+test
+
+.eslintignore
+.eslintrc
+.travis.yml
+.snyk
+
+CHANGELOG.md
+README.md
+
+webpack.config.js
+webpack.prov.config.js
+yarn.lock
+package-lock.json
