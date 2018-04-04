@@ -1,7 +1,7 @@
 {
   "name": "nextable",
   "description": "A library of serial computing.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "addhome2001",
     "url": "https://github.com/addhome2001"
@@ -13,7 +13,7 @@
   },
   "main": "./index.js",
   "engines": {
-    "node": ">=4.2.2"
+    "node": ">=6.14.1"
   },
   "keywords": [
     "serial",
@@ -24,7 +24,9 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint . --ignore-path .gitignore",
     "test:watch": "./node_modules/.bin/ava -w --verbose",
-    "test": "nyc ./node_modules/.bin/ava"
+    "test": "nyc ./node_modules/.bin/ava",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "eslint": "3.12.0",
@@ -34,11 +36,13 @@
   },
   "dependencies": {
     "ava": "0.21.0",
-    "sinon": "1.17.7"
+    "sinon": "1.17.7",
+    "snyk": "^1.31
   },
   "ava": {
     "files": [
       "test/*.js"
     ]
-  }
+  },
+  "snyk": true
 }
